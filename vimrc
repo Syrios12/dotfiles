@@ -2,25 +2,26 @@
 
 set nocompatible
 filetype off
-set rtp+=~/.vim/bundle/vundle/
+set rtp+=~/.vim/Bundle/vundle/
 call vundle#rc()
 Bundle 'gmarik/vundle'
 
-" put bundle commands here
+" put Bundle commands here
 
 Bundle 'scrooloose/nerdtree'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'kien/ctrlp.vim'
 Bundle 'scrooloose/syntastic'
 Bundle 'davidhalter/jedi-vim'
-Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+Bundle 'lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+Bundle 'sjl/gundo.vim'
 
 filetype plugin indent on
 
 
 " remappings
 
-:imap jk <Esc>
+:imap jk <esc>
 
 
 " options
@@ -38,6 +39,14 @@ set t_co=256
 
 set encoding=utf8
 set termencoding=utf8
-set guifont=Meslo\ LG\ L\ DZ\ Regular\ for\ Powerline
-let g:Powerline_symbols='fancy'
+set guifont=meslo\ lg\ l\ dz\ regular\ for\ powerline
+let g:powerline_symbols='fancy'
 set laststatus=2
+
+"for syntastic
+
+let g:syntastic_check_on_open=1
+
+"for gundo
+
+nnoremap <F5> :GundoToggle<CR>
