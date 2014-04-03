@@ -15,6 +15,7 @@ Bundle 'scrooloose/syntastic'
 Bundle 'davidhalter/jedi-vim'
 Bundle 'lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Bundle 'sjl/gundo.vim'
+Bundle 'ervandew/supertab'
 
 filetype plugin indent on
 
@@ -46,7 +47,8 @@ set laststatus=2
 "for syntastic
 
 let g:syntastic_check_on_open=1
-
+let g:syntastic_enable_signs=1
+let g:syntastic_python_checkers = ['flake8']
 "for gundo
 
 nnoremap <F5> :GundoToggle<CR>

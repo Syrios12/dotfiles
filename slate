@@ -1,6 +1,5 @@
 #configs
 
-
 config defaultToCurrentScreen true
 config windowHintsShowIcons true
 config windowHintsIgnoreHiddenWindows false
@@ -21,6 +20,7 @@ alias topright corner top-right resize:screenSizeX/2;screenSizeY/2
 alias bottomleft corner bottom-left resize:screenSizeX/2;screenSizeY/2
 alias bottomright corner bottom-right resize:screenSizeX/2;screenSizeY/2
 
+
 # Location - Sets the window to the specified location.
 
 bind return:shift;cmd ${full}
@@ -35,6 +35,7 @@ bind l:shift;cmd ${righthalf}
 bind .:shift;cmd ${bottomright}
 bind p:shift;cmd ${topright}
 
+
 # Focus - Brings the focus to the window in the specified position
 
 bind l:shift;ctrl focus right
@@ -45,9 +46,12 @@ bind i:shift;ctrl focus 'iTerm'
 bind c:shift;ctrl focus 'Google Chrome'
 bind v:shift;ctrl focus 'MacVim'
 bind e:shift;ctrl focus 'Evernote'
+
+
 #hints
 
 bind m:shift;cmd hint QWERTYUIOP
+
 
 #layouts
 
