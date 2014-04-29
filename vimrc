@@ -23,7 +23,8 @@ filetype plugin indent on
 " remappings
 
 :imap jk <esc>
-
+nmap <S-Enter> O<Esc>j
+nmap <CR> o<Esc>k
 
 " options
 
