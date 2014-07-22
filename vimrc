@@ -2,21 +2,22 @@
 
 set nocompatible
 filetype off
-set rtp+=~/.vim/Bundle/vundle/
-call vundle#rc()
-Bundle 'gmarik/vundle'
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'gmarik/vundle'
 
-" put Bundle commands here
+" put Plugin commands here
 
-Bundle 'scrooloose/nerdtree'
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'kien/ctrlp.vim'
-Bundle 'scrooloose/syntastic'
-Bundle 'davidhalter/jedi-vim'
-Bundle 'lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
-Bundle 'sjl/gundo.vim'
-Bundle 'ervandew/supertab'
+Plugin 'scrooloose/nerdtree'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'kien/ctrlp.vim'
+Plugin 'scrooloose/syntastic'
+Plugin 'davidhalter/jedi-vim'
+Plugin 'lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+Plugin 'sjl/gundo.vim'
+Plugin 'ervandew/supertab'
 
+call vundle#end()
 filetype plugin indent on
 
 
