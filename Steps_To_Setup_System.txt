@@ -14,6 +14,8 @@
 		Firefox
 		PDF Viewer
 .	Install GIT
+		Cache password
+			//help.github.com/articles/caching-your-github-password-in-git		
 . 	Install zsh with prezto
 		http://www.computersnyou.com/3145/2014/04/setup-zsh-oh-zsh-linux-mint-quick-guide/
 		http://linux-doing-it-right.blogspot.com/2013/11/installing-prezto-zsh.html
