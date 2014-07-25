@@ -26,8 +26,10 @@
 . 	Install Anaconda
 		Update Flake8
 		pip install jedi
+. 	Powerline
 		pip install --user git+git://github.com/Lokaltog/powerline
 			https://powerline.readthedocs.org/en/latest/overview.html#usage
+			http://stackoverflow.com/questions/19105279/how-can-i-setup-my-vim-airline-or-vim-powerline
 .	Font
 		sudo apt-get install fonts-inconsolata 
 		sudo fc-cache -fv 

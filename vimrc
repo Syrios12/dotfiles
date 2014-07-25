@@ -58,4 +58,4 @@ let g:syntastic_python_checkers = ['flake8']
 nnoremap <F5> :GundoToggle<CR>
 
 "font
-set guifont=Inconsolata\ 12
+set guifont=Inconsolata\ for\ Powerline\ 12

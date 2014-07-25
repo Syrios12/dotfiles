@@ -13,3 +13,4 @@ fi
 # Customize to your needs...
 
 export PATH=~/anaconda/bin:$PATH
+export PATH=~/.local/bin:$PATH
