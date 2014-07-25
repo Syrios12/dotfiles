@@ -35,16 +35,12 @@ syntax on
 
 syntax enable
 set background=dark
-if has("gui_running")
-	colorscheme solarized
-endif
+let g:solarized_termtrans =  1
+colorscheme solarized
 set t_co=256
 
 "for powerline
 
-"set encoding=utf8
-"set termencoding=utf8
-"let g:powerline_symbols='fancy'
 set rtp+=$HOME/.local/lib/python2.7/site-packages/powerline/bindings/vim/
 set laststatus=2
 
