@@ -35,15 +35,17 @@ syntax on
 
 syntax enable
 set background=dark
-colorscheme solarized
+if has("gui_running")
+	colorscheme solarized
+endif
 set t_co=256
 
 "for powerline
 
-set encoding=utf8
-set termencoding=utf8
-set guifont=meslo\ lg\ l\ dz\ regular\ for\ powerline
-let g:powerline_symbols='fancy'
+"set encoding=utf8
+"set termencoding=utf8
+"let g:powerline_symbols='fancy'
+set rtp+=$HOME/.local/lib/python2.7/site-packages/powerline/bindings/vim/
 set laststatus=2
 
 "for syntastic
@@ -54,3 +56,6 @@ let g:syntastic_python_checkers = ['flake8']
 "for gundo
 
 nnoremap <F5> :GundoToggle<CR>
+
+"font
+set guifont=Inconsolata\ 12
