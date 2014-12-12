@@ -14,6 +14,7 @@ fi
 
 export PATH=~/anaconda/bin:$PATH
 export PATH=~/.local/bin:$PATH
+export PATH=/usr/local/mysql/bin:$PATH
 
 
 export MARKPATH=$HOME/.marks

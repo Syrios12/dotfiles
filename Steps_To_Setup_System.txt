@@ -27,3 +27,6 @@
 		size 12	
 .	Good websites for help
 		https://coderwall.com/p/yiot4q/setup-vim-powerline-and-iterm2-on-mac-os-x
+. 	MySql
+		Download; start; put in path
+		http://coolestguidesontheplanet.com/get-apache-mysql-php-phpmyadmin-working-osx-10-9-mavericks/
