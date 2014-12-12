@@ -1,33 +1,22 @@
 .	Get vim
 		Get vundle
 		Clone vim dot files
-.	Get gvim
+		:PluginInstall
 . 	Set up windows manager
-. 	Set up firefox
-		Google default
-		Vimperator
-		Lastpass
-		Ad block
-		bookmarks
-.	Set up keyboard shortcuts
-		Terminal
-		Firefox
-		PDF Viewer
+		Spectacle
 .	Install GIT
 		Cache password
 			//help.github.com/articles/caching-your-github-password-in-git		
 . 	Install zsh with prezto
-		http://www.computersnyou.com/3145/2014/04/setup-zsh-oh-zsh-linux-mint-quick-guide/
-		http://linux-doing-it-right.blogspot.com/2013/11/installing-prezto-zsh.html
+		https://github.com/sorin-ionescu/prezto
 		have to edit .zshrc for path variable
 		Move these over to my dotfiles folder
-. 	Customize Terminal
-		Solarized colors - download
-. 	Get PDF Viewer
-		Okular (requires KDE --- annoying, but whatever)
+.	Solarized
+		http://ethanschoonover.com/solarized
 . 	Install Anaconda
 		Update Flake8
 		pip install jedi
+.	Install R
 . 	Powerline
 		pip install --user git+git://github.com/Lokaltog/powerline
 			https://powerline.readthedocs.org/en/latest/overview.html#usage
@@ -36,3 +25,5 @@
 		sudo apt-get install fonts-inconsolata 
 		sudo fc-cache -fv 
 		size 12	
+.	Good websites for help
+		https://coderwall.com/p/yiot4q/setup-vim-powerline-and-iterm2-on-mac-os-x

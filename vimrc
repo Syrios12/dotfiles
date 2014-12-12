@@ -42,16 +42,20 @@ set t_co=256
 "for powerline
 
 set rtp+=$HOME/.local/lib/python2.7/site-packages/powerline/bindings/vim/
+let g:Powerline_symbols = 'fancy' 
 set laststatus=2
+set fillchars+=stl:\ ,stlnc:\
+set encoding=utf-8
 
 "for syntastic
 
 let g:syntastic_check_on_open=1
 let g:syntastic_enable_signs=1
 let g:syntastic_python_checkers = ['flake8']
+
 "for gundo
 
 nnoremap <F5> :GundoToggle<CR>
 
 "font
-set guifont=Inconsolata\ for\ Powerline\ 12
+set guifont=Inconsolata\ for\ Powerline:h14
