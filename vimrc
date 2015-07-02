@@ -13,7 +13,7 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'kien/ctrlp.vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'davidhalter/jedi-vim'
-Plugin 'lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+" Plugin 'lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'sjl/gundo.vim'
 Plugin 'ervandew/supertab'
 
@@ -36,16 +36,16 @@ syntax on
 syntax enable
 set background=dark
 let g:solarized_termtrans =  1
-colorscheme solarized
+" colorscheme solarized
 set t_co=256
 
 "for powerline
 
-set rtp+=$HOME/.local/lib/python2.7/site-packages/powerline/bindings/vim/
-let g:Powerline_symbols = 'fancy' 
-set laststatus=2
-set fillchars+=stl:\ ,stlnc:\
-set encoding=utf-8
+" set rtp+=$HOME/.local/lib/python2.7/site-packages/powerline/bindings/vim/
+" let g:Powerline_symbols = 'fancy' 
+" set laststatus=2
+" set fillchars+=stl:\ ,stlnc:\
+" set encoding=utf-8
 
 "for syntastic
 

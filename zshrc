@@ -17,8 +17,7 @@ export PATH=~/.local/bin:$PATH
 export PATH=/usr/local/mysql/bin:$PATH
 export PATH=/Applications/Postgres.app/Contents/Versions/9.4/bin:$PATH
 export DYLD_LIBRARY_PATH=/usr/local/mysql/lib/
-export DATABASE_URL=postgres:///$(tylerfolkman)
-
+# export DATABASE_URL=postgres:///$(tylerfolkman)
 
 export MARKPATH=$HOME/.marks
 function jump { 
@@ -34,3 +33,5 @@ function marks {
 	ls -l "$MARKPATH" | sed 's/  / /g' | cut -d' ' -f9- | sed 's/ -/\t-/g' && echo
 }
 
+# aliases
+alias untar='tar -zxvf'
