@@ -14,15 +14,25 @@ fi
 
 export WORKON_HOME=$HOME/.virtualenvs
 export SCALA_HOME="/usr/local/share/scala-2.10.5"
-export PATH=~/anaconda/bin:$PATH
+export CUDA_ROOT=/Developer/NVIDIA/CUDA-7.5
+export PATH=/Developer/NVIDIA/CUDA-7.5/bin:$PATH
+export PATH=$PATH:/Library/TeX/Distributions/.DefaultTeX/Contents/Programs/texbin
+export PATH=/usr/local/bin:$PATH
 export PATH=$SCALA_HOME/bin:$PATH
 export PATH=~/.local/bin:$PATH
 export PATH=/usr/local/mysql/bin:$PATH
 export PATH=/Applications/Postgres.app/Contents/Versions/9.4/bin:$PATH
+export PATH=~/anaconda/bin:$PATH
 export DYLD_LIBRARY_PATH=/usr/local/mysql/lib/
+export DYLD_LIBRARY_PATH=/Developer/NVIDIA/CUDA-7.5/lib:$DYLD_LIBRARY_PATH
+export DYLD_FALLBACK_LIBRARY_PATH=$HOME/anaconda/lib/:$DYLD_FALLBACK_LIBRARY_PATH
 export SPARK_HOME="/Users/tylerfolkman/spark-1.4.1-bin-hadoop2.6"
 export PYSPARK_SUBMIT_ARGS="--master local[4] pyspark-shell"
 export TERMINFO=/usr/share/terminfo
+export EDITOR=vi
+export VISUAL=vi
+export R_HOME="/Users/tylerfolkman/anaconda/lib"
+export PYTHONPATH="/Users/tylerfolkman/dev_tools/caffe/python:$PYTHONPATH"
 # export DATABASE_URL=postgres:///$(tylerfolkman)
 
 export MARKPATH=$HOME/.marks
@@ -48,4 +58,4 @@ alias hstop="/usr/local/Cellar/hadoop/2.6.0/sbin/stop-yarn.sh;/usr/local/Cellar/
 bindkey -M vicmd "/" history-incremental-search-backward
 
 #Source
-source /Users/tylerfolkman/anaconda/bin
+#source /Users/tylerfolkman/anaconda/bin/virtualenvwrapper.sh
