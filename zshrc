@@ -16,6 +16,7 @@ export WORKON_HOME=$HOME/.virtualenvs
 export SCALA_HOME="/usr/local/share/scala-2.10.5"
 export CUDA_ROOT=/Developer/NVIDIA/CUDA-7.5
 export PATH=/Developer/NVIDIA/CUDA-7.5/bin:$PATH
+export PATH=/Users/tylerfolkman/dev_tools/kafka_2.11-0.10.0.0/bin:$PATH
 export PATH=$PATH:/Library/TeX/Distributions/.DefaultTeX/Contents/Programs/texbin
 export PATH=/usr/local/bin:$PATH
 export PATH=$SCALA_HOME/bin:$PATH
@@ -53,6 +54,8 @@ function marks {
 alias untar='tar -zxvf'
 alias hstart="/usr/local/Cellar/hadoop/2.6.0/sbin/start-dfs.sh;/usr/local/Cellar/hadoop/2.6.0/sbin/start-yarn.sh"
 alias hstop="/usr/local/Cellar/hadoop/2.6.0/sbin/stop-yarn.sh;/usr/local/Cellar/hadoop/2.6.0/sbin/stop-dfs.sh"
+alias zstart="zookeeper-server-start.sh /Users/tylerfolkman/dev_tools/kafka_2.11-0.10.0.0/config/zookeeper.properties"
+alias kstart="kafka-server-start.sh /Users/tylerfolkman/dev_tools/kafka_2.11-0.10.0.0/config/server.properties"
 
 # vim
 bindkey -M vicmd "/" history-incremental-search-backward
